@@ -1,8 +1,13 @@
+import Container from '@mui/material/Container';
+
 import Intro from "./Intro/Intro";
+import { styles } from "./styles";
 
 function LandingPage() {
     return (
-        <Intro />
+        <Container maxWidth="x1" sx={styles.introContainer}>
+            <Intro />
+        </Container>
     );
 }
 

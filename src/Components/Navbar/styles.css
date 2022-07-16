@@ -1,0 +1,24 @@
+/* .navbarLogo:hover {
+    color: inherit;
+    font-weight: 700;
+} */
+
+.navbarMenuItem:hover {
+    color: var(--brown); 
+}
+
+.navbarSidebarExpand {
+    display: none!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarMenu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbarSidebarCollapse {
+        display: none!important;
+    }
+}
