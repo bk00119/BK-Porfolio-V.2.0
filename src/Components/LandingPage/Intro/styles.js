@@ -1,5 +1,6 @@
 export const styles = {
     introTitle: {
-        textAlign: 'center'
+        textAlign: 'center',
+        color: 'black'
     }
 }

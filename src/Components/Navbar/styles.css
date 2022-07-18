@@ -1,24 +1,32 @@
-/* .navbarLogo:hover {
-    color: inherit;
-    font-weight: 700;
-} */
-
 .navbarMenuItem:hover {
     color: var(--brown); 
 }
 
-.navbarSidebarExpand {
-    display: none!important;
+.sideMenuListButton:hover {
+    color: var(--brown);
 }
 
-@media only screen and (max-width: 600px) {
+.sideMenuListItemTextUnderline {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+@media only screen and (max-width: 900px) {
     .navbarMenu {
         display: none;
     }
 }
 
-@media only screen and (min-width: 600px) {
-    .navbarSidebarCollapse {
+@media only screen and (min-width: 900px) {
+    .sidebarIconButton {
         display: none!important;
+    }
+    .navbarLogoImg {
+        height: 4rem!important;
+        width: 4rem!important;
+    }
+    .navbarLogoText {
+        font-size: 3rem!important;
+        line-height: 4rem!important;
     }
 }

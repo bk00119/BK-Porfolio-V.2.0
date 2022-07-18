@@ -1,4 +1,4 @@
-import { useNavigate , Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect , useState } from 'react';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -11,77 +11,80 @@ import IconButton from '@mui/material/IconButton';
 import SideMenu from "./SideMenu";
 import { styles } from "./styles";
 import "./styles.css";
+import { ButtonUnstyled } from "@mui/base";
 
 function Navbar() {
     const navigate = useNavigate();
     const [showMenu, setShowMenu] = useState(false);
-
-    useEffect(()=> {
-        if(showMenu){
-            return console.log("show menu");
-        }
-        if (!showMenu) console.log("close menu");
-    }, [showMenu]);
+    const menuList = [
+        { name: "WORK", dir:"/" },
+        { name: "ABOUT", dir:"/about" },
+        { name: "CONTACT", dir:"/contact" }
+    ];
 
     return (
         <Container maxWidth="x1" sx={styles.navbarContainer}>
-            <Toolbar disablegutters sx={styles.navbarToolbar}>
-                <Typography
-                    variant="h4"
-                    noWrap
-                    component="a"
-                    href="/"
+            <Toolbar disablegutters='true' sx={styles.navbarToolbar}>
+                <Box
                     sx={styles.navbarLogo}
                     className="navbarLogo"
+                    onClick={()=>navigate('/')}
                 >
-                    <span style={styles.navbarLogoLight}>&lt;</span>
-                    <span>BK </span>
-                    <span style={styles.navbarLogoLight}>/&gt;</span>
-                </Typography>
+                    <Typography
+                        sx={styles.navbarLogoText}
+                        className="navbarLogoText"
+                    >
+                        B
+                        <br/>
+                        H
+                    </Typography>
+                    <Box
+                        component="img"
+                        src="/img/logo.png"
+                        sx={styles.navbarLogoImg}
+                        className="navbarLogoImg"
+                    />
+                    <Typography
+                        sx={styles.navbarLogoText}
+                        className="navbarLogoText"
+                    >
+                        K
+                        <br/>
+                        J
+                    </Typography>
+                </Box>
                 
                 {/* Sidebar Icon Shows */}
-                <IconButton
+                <Button
                     size="large"
                     edge="start"
                     color="inherit"
                     aria-label="open drawer"
-                    className={`navbarSidebar${showMenu ? 'Expand' : 'Collapse'}`} 
                     onClick={() => setShowMenu(!showMenu)}
+                    className="sidebarIconButton"
                 >
-                    <MenuIcon/>
-                </IconButton>
+                    <Box 
+                        component="img" 
+                        src="/icons/menu.png"
+                        sx={styles.sidebarIcon}
+                    />
+                </Button>
 
                 {/* Sidebar Menu Shows */}
-                <SideMenu showMenu={showMenu} setShowMenu={setShowMenu} />
+                <SideMenu showMenu={showMenu} setShowMenu={setShowMenu} navigate={navigate} menuList={menuList} />
                 
                 <Box className="navbarMenu">
-                    <Button 
-                        size="large"
-                        variant="text"
-                        sx={styles.navbarMenuItem}
-                        className="navbarMenuItem"
-                        onClick={() => {navigate("/");}}
-                    >
-                        WORK
-                    </Button>
-                    <Button 
-                        size="large"
-                        variant="text"
-                        sx={styles.navbarMenuItem}
-                        className="navbarMenuItem"
-                        onClick={() => {navigate("/about");}}
-                    >
-                        ABOUT
-                    </Button>
-                    <Button 
-                        size="large"
-                        variant="text"
-                        sx={styles.navbarMenuItem}
-                        className="navbarMenuItem"
-                        onClick={() => {navigate("/contact");}}
-                    >
-                        CONTACT
-                    </Button>
+                    {menuList.map(({name, dir})=> (
+                        <Button 
+                            size="large"
+                            variant="text"
+                            sx={styles.navbarMenuItem}
+                            className="navbarMenuItem"
+                            onClick={()=>navigate(dir)}
+                        >
+                            {name}
+                        </Button> 
+                    ))}
                 </Box>
             </Toolbar>
         </Container>
