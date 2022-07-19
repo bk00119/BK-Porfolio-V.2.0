@@ -1,0 +1,11 @@
+@media only screen and (max-width: 900px) {
+    .introTitle {
+        font-size: 1em;
+    }
+    .introTitleName {
+        font-size: 2.5em;
+    }
+    .introTitleDetail {
+        font-size: 1.5em;
+    }
+}

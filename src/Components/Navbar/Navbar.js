@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate , useLocation } from "react-router-dom";
 import { useEffect , useState } from 'react';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,6 +7,10 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
 
 import SideMenu from "./SideMenu";
 import { styles } from "./styles";
@@ -15,6 +19,7 @@ import { ButtonUnstyled } from "@mui/base";
 
 function Navbar() {
     const navigate = useNavigate();
+    const location = useLocation();
     const [showMenu, setShowMenu] = useState(false);
     const menuList = [
         { name: "WORK", dir:"/" },
@@ -75,17 +80,20 @@ function Navbar() {
                 
                 <Box className="navbarMenu">
                     {menuList.map(({name, dir})=> (
-                        <Button 
+                        <Button
+                            key={name}
                             size="large"
                             variant="text"
                             sx={styles.navbarMenuItem}
-                            className="navbarMenuItem"
+                            className={dir===location.pathname ? "navbarMenuItemColored" : "navbarMenuItem"}
                             onClick={()=>navigate(dir)}
                         >
                             {name}
                         </Button> 
                     ))}
                 </Box>
+                
+
             </Toolbar>
         </Container>
     );

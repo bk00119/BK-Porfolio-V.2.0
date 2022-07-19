@@ -1,6 +1,6 @@
 export const styles = {
     introContainer: {
-        mt: 20,
+        mt: 10,
         color: 'black'
     }
 }

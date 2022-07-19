@@ -36,7 +36,7 @@ export const styles = {
         mr: 2,
         fontFamily: 'monospace',
         fontWeight: 700,
-        fontSize: 30,
+        fontSize: 20,
         letterSpacing: '.3rem',
         color: '#bdbdbd',
         textDecoration: 'none'

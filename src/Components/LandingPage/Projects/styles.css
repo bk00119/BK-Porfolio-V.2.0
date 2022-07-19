@@ -1,0 +1,18 @@
+.proejctsGrid {
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    max-width: none!important;
+    /* margin: 0px; */
+}
+.projectsBox {
+    margin: 15px;
+    width: 100%;
+        width: -webkit-fill-available;
+    max-width: 1200px;
+}
+
+@media only screen and (max-width: 900px) {
+    .proejctsGrid {
+        grid-template-columns: 100%;
+    }
+}

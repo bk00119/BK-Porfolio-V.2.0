@@ -2,6 +2,10 @@
     color: var(--brown); 
 }
 
+.navbarMenuItemColored {
+    color: var(--brown)!important;
+}
+
 .sideMenuListButton:hover {
     color: var(--brown);
 }
@@ -22,11 +26,11 @@
         display: none!important;
     }
     .navbarLogoImg {
-        height: 4rem!important;
-        width: 4rem!important;
+        height: 3rem!important;
+        width: 3rem!important;
     }
     .navbarLogoText {
-        font-size: 3rem!important;
-        line-height: 4rem!important;
+        font-size: 2rem!important;
+        line-height: 3rem!important;
     }
 }

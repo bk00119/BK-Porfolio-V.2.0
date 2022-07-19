@@ -1,0 +1,30 @@
+[
+    {
+        "name": "AiTudier",
+        "position": "Fornt-End Development Intern",
+        "termStart": "2022-07",
+        "termEnd": "2022-08",
+        "image": ""
+    },
+    {
+        "name": "Post Expired",
+        "position": "Team Leader",
+        "termStart": "2022-06",
+        "termEnd": "Present",
+        "image": ""
+    },
+    {
+        "name": "HostFam",
+        "position": "Individual Project",
+        "termStart": "2021-01",
+        "termEnd": "2021-07",
+        "image": "/img/projects_cover/HostFam.png"
+    },
+    {
+        "name": "Wettown Study Hall Sign-In Application",
+        "position": "Team Leader",
+        "termStart": "2017-12",
+        "termEnd": "2019-01",
+        "image": "/img/projects_cover/WT_SHSI.jpg"
+    }
+]
