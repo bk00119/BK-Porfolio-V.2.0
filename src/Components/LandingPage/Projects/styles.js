@@ -1,31 +1,27 @@
 export const styles = {
-    proejctsGrid: {
-        // width: '90vw'
+    proejctGrid: {
         justifyContent: "space-evenly",
-
         display: "grid",
-        // flexDirection: "column"
     },
-    projectsBox: {
-        // width: '40vw',
-        // maxWidth: 800,
-        // height: '20vh',
-        // flexGrow: 1
-        // aspectRatio: '1.5'
-    },
-    projectsCard: {
+    projectCard: {
         height: 'inherit',
         borderRadius: 0,
-        boxShadow: 'none',
+        width: 'inherit',
+        marginBottom: '1rem'
+    },
+    projectCardMotion: {
         width: 'inherit'
     },
-    projectsImage: {
+    projectImage: {
         height: "inherit",
         objectPosition: "top",
         aspectRatio: '1.5',
         width: 'inherit'
     },
-    projectsTitle: {
-
+    projectDetailBox: {
+        display: "flex"
+    },
+    projectLanguage: {
+        ml: "1rem"
     }
 }

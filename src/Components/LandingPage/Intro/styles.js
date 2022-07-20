@@ -3,7 +3,6 @@ export const styles = {
         display: "flex",
         flexDirection: "column",
         width: "fit-content",
-        marginBottom: "5rem",
         // height: '30vh',
         height: '10rem',
         justifyContent: 'flex-start'

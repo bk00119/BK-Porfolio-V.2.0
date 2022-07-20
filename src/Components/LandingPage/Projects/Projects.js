@@ -4,45 +4,78 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
+import { motion } from 'framer-motion';
+import { useNavigate } from "react-router-dom";
 
 import  ProjectList  from "./project_list.json";
 import { styles } from "./styles";
 import "./styles.css";
 
 export default function Projects() {
+    const navigate = useNavigate();
+
     return (
         <Container
-            // container
-            // columns={2}
-            // xs={2}
-            sx={styles.proejctsGrid}
-            className="proejctsGrid"
+            sx={styles.proejctGrid}
+            className="proejctGrid"
         >
             {ProjectList.map((project)=>(
                 <Box
                     key={project.name}
-                    sx={styles.projectsBox}
-                    className="projectsBox"
+                    sx={styles.projectBox}
+                    className="projectBox"
                 >
-                    <Card
-                        variant="outlined"
-                        sx={styles.projectsCard}
+                    <motion.div
+                        whileHover={{ scale: 0.95 }}
+                        style={styles.projectCardMotion}
                     >
-                        <CardMedia
-                            component="img"
-                            image={project.image}
-                            alt={project.name+' cover image'}
-                            sx={styles.projectsImage}
-                        />
-                    </Card>
+                        <Card
+                            // variant="outlined"
+                            sx={styles.projectCard}
+                            className="projectCard"
+                            onClick={()=>navigate(project.dir)}
+                        >
+                            <CardMedia
+                                component="img"
+                                image={project.image}
+                                alt={project.name+' cover image'}
+                                sx={styles.projectImage}
+                            />
+                        </Card>
+                    </motion.div>
                     <Typography
-                        variant="h5"
-                        sx={styles.projectsTitle}
-                        className="projectsTitle"
+                        variant="h4"
+                        sx={styles.projectTitle}
+                        className="projectTitle"
                     >
                         {project.name}
-                        {/* asdf */}
                     </Typography>
+                    <Typography
+                        variant="h6"
+                        sx={styles.projectDescription}
+                        className="projectDescription"
+                    >
+                        asdfklsdjflaslfj
+                        {project.shortDescription}
+                    </Typography>
+                    <Box
+                        sx={styles.projectKeywordBox}
+                    >
+                        <Typography
+                            variant="h8"
+                            sx={styles.projectPosition}
+                            className="projectPosition"
+                        >
+                            #{project.position}
+                        </Typography>
+                        <Typography
+                            variant="h8"
+                            sx={styles.projectLanguage}
+                            className="projectLanguage"
+                        >
+                            #{project.language}
+                        </Typography>
+                    </Box>
                 </Box>
             ))}
         </Container>

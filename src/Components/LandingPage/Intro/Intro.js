@@ -14,7 +14,11 @@ export default function Intro() {
     ];
     
     return (
-        <Container maxWidth="x1" sx={styles.introContainer}>
+        <Container 
+            maxWidth="x1" 
+            sx={styles.introContainer}
+            className="introContainer"
+        >
             <Typography
                 variant="h5"
                 sx={styles.introTitle}
