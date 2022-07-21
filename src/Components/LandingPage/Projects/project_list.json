@@ -2,27 +2,27 @@
     {
         "name": "AiTudier",
         "position": "Front-End Development Intern",
-        "shortDescription": "",
+        "shortDescription": "Online course provider specialzed in Electrical Engineering and Computer Science",
         "language": "ReactJS",
         "termStart": "2022-07",
         "termEnd": "2022-08",
-        "image": "",
+        "image": "/img/projects_cover/AiTudier.png",
         "dir": "/AiTudier"
     },
     {
         "name": "Post Expired",
         "position": "Team Leader",
-        "shortDescription": "",
+        "shortDescription": "B2C web application providing food past expiration date",
         "language": "MERN Stack",
         "termStart": "2022-06",
         "termEnd": "Present",
-        "image": "",
+        "image": "/img/projects_cover/PostExpired.png",
         "dir": "/PostExpired"
     },
     {
         "name": "HostFam",
         "position": "Individual Project",
-        "shortDescription": "",
+        "shortDescription": "Web application connecting international students and host families in the U.S.",
         "language": "MERN Stack",
         "termStart": "2021-01",
         "termEnd": "2021-07",
@@ -32,7 +32,7 @@
     {
         "name": "Wettown Study Hall Sign-In",
         "position": "Team Leader",
-        "shortDescription": "",
+        "shortDescription": "Mobile-friendly web application used by 400+ students signing in for study hall locations",
         "language": "LAMP Stack",
         "termStart": "2017-12",
         "termEnd": "2019-01",

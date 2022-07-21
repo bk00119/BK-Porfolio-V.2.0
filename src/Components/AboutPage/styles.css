@@ -1,0 +1,18 @@
+.aboutImageContainer {
+    width: fit-content!important;
+    margin: 0!important;
+}
+
+@media only screen and (max-width: 900px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+    .aboutImageContainer {
+        width: inherit!important;
+        margin-bottom: 3rem!important;
+        text-align: center; /*remove this with a better resolution image*/
+    }
+    .aboutTitle {
+        font-size: 3rem!important;
+    }
+}

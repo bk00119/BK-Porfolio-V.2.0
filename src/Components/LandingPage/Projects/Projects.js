@@ -1,9 +1,9 @@
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import { motion } from 'framer-motion';
 import { useNavigate } from "react-router-dom";
 
@@ -44,7 +44,7 @@ export default function Projects() {
                         </Card>
                     </motion.div>
                     <Typography
-                        variant="h4"
+                        variant="h5"
                         sx={styles.projectTitle}
                         className="projectTitle"
                     >
@@ -55,26 +55,39 @@ export default function Projects() {
                         sx={styles.projectDescription}
                         className="projectDescription"
                     >
-                        asdfklsdjflaslfj
                         {project.shortDescription}
                     </Typography>
                     <Box
                         sx={styles.projectKeywordBox}
+                        className="projectKeywordBox"
                     >
                         <Typography
-                            variant="h8"
+                            variant="h7"
                             sx={styles.projectPosition}
                             className="projectPosition"
                         >
                             #{project.position}
                         </Typography>
                         <Typography
-                            variant="h8"
+                            variant="h7"
                             sx={styles.projectLanguage}
                             className="projectLanguage"
                         >
                             #{project.language}
                         </Typography>
+                    </Box>
+                    <Box
+                        sx={styles.projectButtonBox}
+                    >
+                        <Button
+                            size="medium"
+                            variant="text"
+                            sx={styles.projectButton}
+                            className="projectButton"
+                            onClick={()=>navigate(project.dir)}
+                        >
+                            Read More
+                        </Button>
                     </Box>
                 </Box>
             ))}

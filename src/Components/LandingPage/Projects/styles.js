@@ -18,10 +18,26 @@ export const styles = {
         aspectRatio: '1.5',
         width: 'inherit'
     },
-    projectDetailBox: {
+    projectTitle: {
+        fontWeight: 700,
+        mb: 1
+    },
+    projectDescription: {
+        mb: 1
+    },
+    projectKeywordBox: {
+        mb: 1,
         display: "flex"
     },
     projectLanguage: {
         ml: "1rem"
+    },
+    projectButtonBox: {
+        display: 'flex',
+        justifyContent: 'flex-end'
+    },
+    projectButton: {
+        color: 'var(--brown)',
+        textTransform: 'initial'
     }
 }
