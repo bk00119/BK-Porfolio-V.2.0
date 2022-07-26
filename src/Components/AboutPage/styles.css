@@ -1,5 +1,16 @@
+.aboutContainer {
+    flex-direction: row;
+}
 .aboutImageContainer {
-    width: fit-content!important;
+    /* width: fit-content!important; */
+    width: 100%!important;
+    margin: 0!important;
+    max-width: 600px!important;
+}
+.aboutImage {
+    max-width: 600px;
+}
+.aboutInfoContainer {
     margin: 0!important;
 }
 
@@ -11,6 +22,10 @@
         width: inherit!important;
         margin-bottom: 3rem!important;
         text-align: center; /*remove this with a better resolution image*/
+        max-width: unset!important;
+    }
+    .aboutImage {
+        max-width: unset;
     }
     .aboutTitle {
         font-size: 3rem!important;

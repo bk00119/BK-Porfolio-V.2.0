@@ -9,11 +9,16 @@ export const styles = {
     },
     introTitle: {
         // textAlign: 'center',
-        color: 'black'
+        color: 'black',
+        fontFamily: 'inherit'
     },
     introTitleName: {
         color: 'var(--brown)',
-        fontWeight: 700
+        fontWeight: 700,
+        fontFamily: 'inherit'
+    },
+    introTitleDetail: {
+        fontFamily: 'inherit'
     },
     introTitleDetailPreset: {
         visibility: 'hidden'

@@ -34,10 +34,9 @@ export const styles = {
     },
     navbarMenuItem: {
         mr: 2,
-        fontFamily: 'monospace',
-        fontWeight: 700,
+        fontFamily: 'inherit',
+        fontWeight: 500,
         fontSize: 20,
-        letterSpacing: '.3rem',
         color: '#bdbdbd',
         textDecoration: 'none'
     },
@@ -46,7 +45,8 @@ export const styles = {
         height: 30,
     },
     sideMenuListItemText: {
-        fontSize: '1.5rem'
+        fontSize: '1.5rem',
+        fontFamily: 'inherit'
     },
 
 };

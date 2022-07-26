@@ -4,7 +4,6 @@ import Typewriter from 'typewriter-effect';
 
 import { styles } from "./styles";
 import "./styles.css";
-import SkillSphere from "./SkillSphere";
 
 export default function Intro() {
     const descriptions = [

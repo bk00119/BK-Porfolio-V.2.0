@@ -43,51 +43,55 @@ export default function Projects() {
                             />
                         </Card>
                     </motion.div>
-                    <Typography
-                        variant="h5"
-                        sx={styles.projectTitle}
-                        className="projectTitle"
-                    >
-                        {project.name}
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        sx={styles.projectDescription}
-                        className="projectDescription"
-                    >
-                        {project.shortDescription}
-                    </Typography>
-                    <Box
-                        sx={styles.projectKeywordBox}
-                        className="projectKeywordBox"
-                    >
-                        <Typography
-                            variant="h7"
-                            sx={styles.projectPosition}
-                            className="projectPosition"
+                    <Box sx={styles.projectTextBox}>
+                        <Box>
+                            <Typography
+                                variant="h5"
+                                sx={styles.projectTitle}
+                                className="projectTitle"
+                            >
+                                {project.name}
+                            </Typography>
+                            <Typography
+                                variant="h6"
+                                sx={styles.projectDescription}
+                                className="projectDescription"
+                            >
+                                {project.shortDescription}
+                            </Typography>
+                            <Box
+                                sx={styles.projectKeywordBox}
+                                className="projectKeywordBox"
+                            >
+                                <Typography
+                                    variant="h7"
+                                    sx={styles.projectPosition}
+                                    className="projectPosition"
+                                >
+                                    #{project.position}
+                                </Typography>
+                                <Typography
+                                    variant="h7"
+                                    sx={styles.projectLanguage}
+                                    className="projectLanguage"
+                                >
+                                    #{project.language}
+                                </Typography>
+                            </Box>
+                        </Box>
+                        <Box
+                            sx={styles.projectButtonBox}
                         >
-                            #{project.position}
-                        </Typography>
-                        <Typography
-                            variant="h7"
-                            sx={styles.projectLanguage}
-                            className="projectLanguage"
-                        >
-                            #{project.language}
-                        </Typography>
-                    </Box>
-                    <Box
-                        sx={styles.projectButtonBox}
-                    >
-                        <Button
-                            size="medium"
-                            variant="text"
-                            sx={styles.projectButton}
-                            className="projectButton"
-                            onClick={()=>navigate(project.dir)}
-                        >
-                            Read More
-                        </Button>
+                            <Button
+                                size="medium"
+                                variant="text"
+                                sx={styles.projectButton}
+                                className="projectButton"
+                                onClick={()=>navigate(project.dir)}
+                            >
+                                Read More
+                            </Button>
+                        </Box>
                     </Box>
                 </Box>
             ))}

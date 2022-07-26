@@ -3,6 +3,10 @@ export const styles = {
         justifyContent: "space-evenly",
         display: "grid",
     },
+    projectBox: {
+        display: 'flex',
+        flexDirection: 'column'
+    },
     projectCard: {
         height: 'inherit',
         borderRadius: 0,
@@ -18,12 +22,20 @@ export const styles = {
         aspectRatio: '1.5',
         width: 'inherit'
     },
+    projectTextBox: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        height: '100%'
+    },
     projectTitle: {
-        fontWeight: 700,
-        mb: 1
+        fontWeight: 600,
+        mb: 1,
+        fontFamily: 'inherit'
     },
     projectDescription: {
-        mb: 1
+        mb: 1,
+        fontFamily: 'inherit'
     },
     projectKeywordBox: {
         mb: 1,
