@@ -1,0 +1,19 @@
+.foodImage {
+    opacity: 0.5;
+    width: 32%;
+    margin: 5px;
+    max-width: 400px;
+}
+.foodImage:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    .foodImage {
+        opacity: 1;
+        margin: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        max-width: unset;
+    }
+}
