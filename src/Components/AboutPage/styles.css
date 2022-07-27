@@ -1,4 +1,4 @@
-.aboutContainer {
+.aboutIntroContainer {
     flex-direction: row;
 }
 .aboutImageContainer {
@@ -15,11 +15,11 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .aboutContainer {
+    .aboutIntroContainer {
         flex-direction: column;
     }
     .aboutImageContainer {
-        width: inherit!important;
+        /* width: inherit!important; */
         margin-bottom: 3rem!important;
         text-align: center; /*remove this with a better resolution image*/
         max-width: unset!important;

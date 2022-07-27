@@ -1,5 +1,4 @@
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import { Container, Typography } from '@mui/material';
 import Typewriter from 'typewriter-effect';
 
 import { styles } from "./styles";

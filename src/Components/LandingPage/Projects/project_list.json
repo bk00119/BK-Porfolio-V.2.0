@@ -30,7 +30,7 @@
         "dir": "/HostFam"
     },
     {
-        "name": "Wettown Study Hall Sign-In",
+        "name": "Westtown Study Hall Sign-In",
         "position": "Team Leader",
         "shortDescription": "Mobile-friendly web application used by 400+ students signing in for study hall locations",
         "language": "LAMP Stack",

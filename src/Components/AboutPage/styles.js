@@ -1,5 +1,5 @@
 export const styles = {
-    aboutContainer: {
+    aboutIntroContainer: {
         mt: 10,
         color: 'black',
         display: 'flex',

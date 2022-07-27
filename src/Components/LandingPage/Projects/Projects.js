@@ -1,9 +1,4 @@
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+import { Container, Box, Typography, Card, CardMedia, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useNavigate } from "react-router-dom";
 

@@ -1,0 +1,18 @@
+[
+    {
+        "name": "AiTudier",
+        "logo": "/img/experience_logo/AiTudier_logo.png",
+        "position": "Front-End Development Intern",
+        "termStart": "July 2022",
+        "termEnd": "August 2022",
+        "url": "https://www.aitudier.com/"
+    },
+    {
+        "name": "Republic of Korea Army",
+        "logo": "/img/experience_logo/ROKA_logo.png",
+        "position": "Signalman, Sergeant",
+        "termStart": "June 2020",
+        "termEnd": "December 2021",
+        "url": "https://www.army.mil.kr/webapp/user/indexMain.do?siteId=english"
+    }
+]

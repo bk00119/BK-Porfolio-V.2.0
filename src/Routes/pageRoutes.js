@@ -1,5 +1,4 @@
 import LandingPage from "../Components/LandingPage";
-import FooterPage from "../Components/FooterPage";
 import AboutPage from "../Components/AboutPage";
 import ContactPage from "../Components/ContactPage";
 import ProjectDetailPage from "../Components/LandingPage/Projects/ProjectDetailPage";

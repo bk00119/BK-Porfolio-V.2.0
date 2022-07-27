@@ -1,10 +1,6 @@
 import { useLocation  } from "react-router-dom";
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import { SwipeableDrawer, Box, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
+
 
 import { styles } from './styles';
 import "./styles.css";

@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes , Route } from "react-router-dom";
 
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar";
 import pageRoutes from "./Routes/pageRoutes";
+import Footer from "./Components/Footer"
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route key={route.path} exact path={route.path} element={route.element} />
         ))}
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

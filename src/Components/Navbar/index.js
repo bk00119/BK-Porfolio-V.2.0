@@ -1,21 +1,10 @@
 import { useNavigate , useLocation } from "react-router-dom";
-import { useEffect , useState } from 'react';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuIcon from '@mui/icons-material/Menu';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import { useState } from 'react';
+import { Container, Box, Typography, Toolbar, Button } from '@mui/material';
 
 import SideMenu from "./SideMenu";
 import { styles } from "./styles";
 import "./styles.css";
-import { ButtonUnstyled } from "@mui/base";
 
 function Navbar() {
     const navigate = useNavigate();
