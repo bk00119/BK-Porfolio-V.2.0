@@ -3,6 +3,7 @@ import { BrowserRouter, Routes , Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import pageRoutes from "./Routes/pageRoutes";
 import Footer from "./Components/Footer"
+import ScrollToTop from "./Components/ScrollToTop";
 import "./App.css";
 
 function App() {
@@ -12,13 +13,15 @@ function App() {
   
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        {pageRoutes.map((route) => (
-          <Route key={route.path} exact path={route.path} element={route.element} />
-        ))}
-      </Routes>
-      <Footer />
+      <ScrollToTop>
+        <Navbar />
+        <Routes>
+          {pageRoutes.map((route) => (
+            <Route key={route.path} exact path={route.path} element={route.element} />
+          ))}
+        </Routes>
+        <Footer />
+      </ScrollToTop>
     </BrowserRouter>
   );
 }

@@ -2,7 +2,8 @@ import { blue } from "@mui/material/colors";
 
 export const styles = {
     navbarContainer: {
-        mt: 3
+        mt: 3,
+        mb: 10
     },
     navbarToolbar: {
         justifyContent: 'space-between'

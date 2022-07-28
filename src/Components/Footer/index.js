@@ -1,6 +1,7 @@
 import { Container, Box, Typography, Link } from "@mui/material";
 
 import { styles } from "./styles";
+import "./styles.css";
 
 export default function Footer() {
     return (
@@ -15,8 +16,25 @@ export default function Footer() {
                         Brian Kim @ 2022
                     </Typography>
                 </Box>
-                <Box>
-                    LinkedIn, GitHub
+                <Box sx={styles.footerIconsBox}>
+                    <Link href="https://www.linkedin.com/in/briankim00119/" target="_blank" >
+                        <Box
+                            component="img"
+                            src="/icons/linkedin.png"
+                            alt="LinkedIn Icon"
+                            sx={styles.footerIcon}
+                            className="footerIcon"
+                        />
+                    </Link>
+                    <Link href="https://github.com/bk00119" target="_blank" >
+                        <Box
+                            component="img"
+                            src="/icons/github.png"
+                            alt="GitHub Icon"
+                            sx={styles.footerIcon}
+                            className="footerIcon"
+                        />
+                    </Link>
                 </Box>
                 <Box>
                     <Typography
