@@ -1,0 +1,7 @@
+.projectIntroImageBox {
+    flex-direction: row!important;
+}
+
+.projectLaptopImage {
+    width: inherit;
+}

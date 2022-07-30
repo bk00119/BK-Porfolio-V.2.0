@@ -16,6 +16,7 @@ export default function FoodArchive(){
             <Box sx={styles.foodImageBox}>
                 {food_list.map((food)=> (
                     <Box
+                        key={food}
                         component="img"
                         src={food}
                         sx={styles.foodImage}

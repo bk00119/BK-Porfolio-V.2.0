@@ -5,30 +5,6 @@ export const styles = {
         flexWrap: 'wrap',
         alignContent: 'flex-start'
     },
-    projectPageTitleContainer: {
-        mt: '10vh',
-        mb: '10vh'
-    },
-    projectPageTitle: {
-        fontFamily: 'inherit',
-        textAlign: 'center'
-    },
-    projectPageSubtitle: {
-        fontFamily: 'inherit',
-        textAlign: 'center',
-        mt: '2rem'
-    },
-    projectIntroImageBox: {
-        width: '100%',
-        mt: '10vh',
-        mb: '10vh',
-        display: 'flex',
-        justifyContent: 'center'
-    },
-    projectLaptopImage: {
-        maxWidth: '1200px',
-        width: 'inherit'
-    },
     projectDetailBox: {
         display: 'flex',
         justifyContent: 'center',
@@ -53,19 +29,14 @@ export const styles = {
         fontFamily: 'inherit',
         fontWeight: 400,
     },
-    projectOverviewBox: {
-        mt: '5rem',
-        mb: '5rem'
+    mobileDemoContainer: {
+        display: 'flex',
+        width: '100%',
+        mb: '10rem'
     },
-    projectOverviewTitle: {
-        fontFamily: 'inherit',
-        fontWeight: 500,
-        mb: '1rem'
-    },
-    projectOverviewInfo: {
-        fontFamily: 'inherit',
-        fontWeight: 400,
-        maxWidth: '1000px'
+    mobileDemoBox: {
+        width: 'fit-content',
+        position: 'relative'
     },
     youtubePlayerContainer: {
         position: 'relative',

@@ -1,0 +1,8 @@
+{
+    "title": "Westtown Study Hall Sign-In Application",
+    "subTitle": "Sign-in for study hall location",
+    "imgSrc": {
+        "introImg": "img/projects/WT_SHSI/laptop.png"
+    },
+    "overview": "Study Hall Sign-in application is for students of Westtown School to sign-in for study hall locations. I initiated the idea and led a team of student programmers at Westtown School to build this application."
+}

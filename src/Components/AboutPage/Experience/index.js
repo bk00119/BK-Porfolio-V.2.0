@@ -1,4 +1,4 @@
-import { Container, Typography, Box, Link, Divider } from '@mui/material';
+import { Typography, Box, Link, Divider } from '@mui/material';
 
 import  ExperienceList  from "./experience_list.json";
 import { styles } from "./styles";
@@ -17,13 +17,7 @@ export default function Experience() {
             <Box>
                 {ExperienceList.map((experience)=> (
                     <Box key={experience.name} sx={styles.experienceBox}>
-                        {/* <Typography
-                            variant="h5"
-                            sx={styles.experienceName}
-                        >
-                            {experience.name}
-                        </Typography> */}
-                        <Link href={experience.url}>
+                        <Link href={experience.url}  target="_blank" >
                             <Box
                                 component="img"
                                 src={experience.logo}

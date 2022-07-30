@@ -1,3 +1,18 @@
+.projectDetailsTwo {
+    margin-left: 10rem;
+}
+
+.mobileDemoFrame {
+    width: 400px;
+}
+
+.mobileDemoBox video {
+    position: absolute;
+    left: 29px;
+    top: 90px;
+    width: 343px;
+}
+
 .youtubePlayerContainer iframe {
     position: absolute;
     top: 0;
@@ -7,17 +22,6 @@
     border: 0;
 }
 
-.projectIntroImageBox {
-    flex-direction: row!important;
-}
-
-.projectLaptopImage {
-    width: inherit;
-}
-
-.projectDetailsTwo {
-    margin-left: 10rem;
-}
 
 @media only screen and (max-width: 900px) {
     .projectDetailBox {
@@ -25,6 +29,17 @@
     }
     .projectDetailsTwo {
         margin-left: 0;
+    }
+    .mobileDemoContainer {
+        justify-content: center;
+    }
+    .mobileDemoFrame {
+        width: 250px;
+    }
+    .mobileDemoBox video {
+        width: 215px;
+        left: 18px;
+        top: 58px;
     }
     
 }
