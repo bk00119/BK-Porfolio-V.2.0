@@ -1,13 +1,14 @@
 import { Container, Box, Typography } from '@mui/material';
-// import InstagramEmbed from 'react-instagram-embed';
 
 import Experience from "./Experience";
 import FoodArchive from "./FoodArchive";
+import InstagramPost from '../InstagramPost';
 import { styles } from "./styles";
 import "./styles.css";
 
 export default function AboutPage() {
-    const hoduAge = new Date(new Date() - new Date("2022-02-07 GMT-0500"));
+    // GMT-0500
+    const hoduAge = new Date(new Date() - new Date("2022-02-07T00:00:00-05:00"));
     const hoduAgeYear = hoduAge.getFullYear() - 1970;
     const hoduAgeString = hoduAgeYear >= 1 ? (hoduAgeYear + (hoduAgeYear > 1 ? " years" : " year")) : (hoduAge.getMonth() + " months");
     const aboutInfo = [
@@ -51,19 +52,7 @@ export default function AboutPage() {
                                 {info}
                             </Typography>
                         ))}
-                        {/* <InstagramEmbed
-                            url='https://www.instagram.com/newyork_hodu/'
-                            clientAccessToken='596065048840098|417ea45f4b1d202e26d7374b62e7e28f'
-                            // maxWidth={320}
-                            // hideCaption={false}
-                            // containerTagName='div'
-                            // protocol=''
-                            // injectScript
-                            // onLoading={() => {}}
-                            // onSuccess={() => {}}
-                            // onAfterRender={() => {}}
-                            // onFailure={() => {}}
-                        />               */}
+                        <InstagramPost />
                         <Experience />
                     </Container>
                 </Box>

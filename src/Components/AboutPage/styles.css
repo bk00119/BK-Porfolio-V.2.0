@@ -14,7 +14,7 @@
     margin: 0!important;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     .aboutIntroContainer {
         flex-direction: column;
     }
@@ -24,10 +24,14 @@
         text-align: center; /*remove this with a better resolution image*/
         max-width: unset!important;
     }
-    .aboutImage {
-        max-width: unset;
-    }
+}
+
+@media only screen and (max-width: 900px) {
     .aboutTitle {
         font-size: 3rem!important;
+    }
+
+    .aboutImage {
+        max-width: unset;
     }
 }

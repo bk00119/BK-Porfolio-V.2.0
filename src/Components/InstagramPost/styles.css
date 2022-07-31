@@ -1,0 +1,36 @@
+.instagramPostBlock {
+    display: flex;
+}
+
+.instagramPost {
+    width: 100%;
+    max-width: 400px;
+}
+
+.secondPost {
+    margin-left: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .instagramPostBlock {
+        justify-content: space-around;
+    }
+    .secondPost {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .instagramPostBlock {
+        flex-direction: column;
+        margin-left: -32px;
+        margin-right: -32px;
+        justify-content: unset;
+    }
+    .instagramPost {
+        max-width: unset;
+    }
+    .secondPost {
+        margin-top: 2rem;
+    }
+}
