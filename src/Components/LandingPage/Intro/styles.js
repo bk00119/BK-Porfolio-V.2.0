@@ -10,7 +10,8 @@ export const styles = {
     introTitle: {
         // textAlign: 'center',
         color: 'black',
-        fontFamily: 'inherit'
+        fontFamily: 'inherit',
+        // fontWeight: 600
     },
     introTitleName: {
         color: 'var(--brown)',
@@ -18,7 +19,8 @@ export const styles = {
         fontFamily: 'inherit'
     },
     introTitleDetail: {
-        fontFamily: 'inherit'
+        fontFamily: 'inherit',
+        fontWeight: 500,
     },
     introTitleDetailPreset: {
         visibility: 'hidden'

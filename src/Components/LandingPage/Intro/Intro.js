@@ -18,14 +18,14 @@ export default function Intro() {
             className="introContainer"
         >
             <Typography
-                variant="h5"
+                variant="h4"
                 sx={styles.introTitle}
                 className="introTitle"
             >
                 Hi 🙋‍♂️ my name is
             </Typography>
             <Typography
-                variant="h2"
+                variant="h1"
                 sx={styles.introTitleName}
                 className="introTitleName"
             >

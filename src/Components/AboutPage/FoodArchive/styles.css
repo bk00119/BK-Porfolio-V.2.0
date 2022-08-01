@@ -1,11 +1,18 @@
 .foodImage {
     opacity: 0.5;
-    width: 32%;
+    width: 24%;
     margin: 5px;
-    max-width: 400px;
+    flex: 1 0 24%;
 }
 .foodImage:hover {
     opacity: 1;
+}
+
+@media only screen and (max-width: 1400px) {
+    .foodImage {
+        width: 32%;
+        flex: 1 0 32%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
