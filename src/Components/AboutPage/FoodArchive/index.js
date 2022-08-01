@@ -18,7 +18,7 @@ export default function FoodArchive(){
                     <Box
                         key={food}
                         component="img"
-                        src={food}
+                        src={require(`${food}`)}
                         sx={styles.foodImage}
                         className="foodImage"
                     />

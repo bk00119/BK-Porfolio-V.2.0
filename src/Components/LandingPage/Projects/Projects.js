@@ -25,14 +25,14 @@ export default function Projects() {
                         style={styles.projectCardMotion}
                     >
                         <Card
-                            // variant="outlined"
                             sx={styles.projectCard}
                             className="projectCard"
                             onClick={()=>navigate(project.dir)}
                         >
                             <CardMedia
                                 component="img"
-                                image={project.image}
+                                // image={project.image}
+                                image={require(`${project.image}`)}
                                 alt={project.name+' cover image'}
                                 sx={styles.projectImage}
                             />

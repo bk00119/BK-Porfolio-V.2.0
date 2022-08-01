@@ -6,7 +6,7 @@
         "language": "ReactJS",
         "termStart": "2022-07",
         "termEnd": "2022-08",
-        "image": "/img/projects/AiTudier/cover.png",
+        "image": "./ProjectDetailPage/AiTudier/img/cover.png",
         "dir": "/AiTudier"
     },
     {
@@ -16,7 +16,7 @@
         "language": "MERN Stack",
         "termStart": "2022-06",
         "termEnd": "Present",
-        "image": "/img/projects/PostExpired/cover.png",
+        "image": "./ProjectDetailPage/PostExpired/img/cover.png",
         "dir": "/PostExpired"
     },
     {
@@ -26,7 +26,7 @@
         "language": "MERN Stack",
         "termStart": "2021-01",
         "termEnd": "2021-07",
-        "image": "/img/projects/HostFam/cover.png",
+        "image": "./ProjectDetailPage/HostFam/img/cover.png",
         "dir": "/HostFam"
     },
     {
@@ -36,7 +36,7 @@
         "language": "LAMP Stack",
         "termStart": "2017-12",
         "termEnd": "2019-01",
-        "image": "/img/projects/WT_SHSI/cover.jpg",
+        "image": "./ProjectDetailPage/WT_SHSI/img/cover.jpg",
         "dir": "/WT_SHSI"
     }
 ]

@@ -1,14 +1,14 @@
 [
-    "/img/food_archive/2.jpg",
-    "/img/food_archive/3.jpg",
-    "/img/food_archive/4.jpg",
-    "/img/food_archive/5.jpg",
-    "/img/food_archive/6.jpg",
-    "/img/food_archive/7.jpg",
-    "/img/food_archive/8.jpg",
-    "/img/food_archive/12.jpg",
-    "/img/food_archive/14.jpg",
-    "/img/food_archive/16.jpg",
-    "/img/food_archive/17.jpg",
-    "/img/food_archive/19.jpg"
+    "./img/2.jpg",
+    "./img/3.jpg",
+    "./img/4.jpg",
+    "./img/5.jpg",
+    "./img/6.jpg",
+    "./img/7.jpg",
+    "./img/8.jpg",
+    "./img/12.jpg",
+    "./img/14.jpg",
+    "./img/16.jpg",
+    "./img/17.jpg",
+    "./img/19.jpg"
 ]

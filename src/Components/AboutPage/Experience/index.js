@@ -20,7 +20,7 @@ export default function Experience() {
                         <Link href={experience.url}  target="_blank" >
                             <Box
                                 component="img"
-                                src={experience.logo}
+                                src={require(`${experience.logo}`)}
                                 sx={styles.experienceLogo}
                             >
                             </Box>

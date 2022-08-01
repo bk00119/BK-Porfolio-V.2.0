@@ -12,12 +12,12 @@ export default function MobileDemo(){
                     <Box sx={styles.mobileDemoBox} className="mobileDemoBox">
                         <Box
                             component="img"
-                            src="img/projects/WT_SHSI/iphone8.png"
+                            src={require("./img/iphone8.png")}
                             className="mobileDemoFrame"
                         >
                         </Box>
                         <video autoPlay loop muted playsInline>
-                            <source src="img/projects/WT_SHSI/mobileDemo2.mp4" type="video/mp4" />
+                            <source src={require("./img/mobileDemo.mp4")} type="video/mp4" />
                         </video>
                     </Box>
                 </Container>

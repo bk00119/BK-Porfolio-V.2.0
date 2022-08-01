@@ -26,7 +26,7 @@ export default function AboutPage() {
                     >
                         <Box
                             component="img"
-                            src="/img/profile.jpg"
+                            src={require("./img/profile.jpg")}
                             sx={styles.aboutImage}
                             className="aboutImage"
                         />

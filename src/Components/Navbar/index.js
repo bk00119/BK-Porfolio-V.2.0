@@ -34,7 +34,7 @@ function Navbar() {
                     </Typography>
                     <Box
                         component="img"
-                        src="/img/logo.png"
+                        src="/icons/logo.png"
                         sx={styles.navbarLogoImg}
                         className="navbarLogoImg"
                     />

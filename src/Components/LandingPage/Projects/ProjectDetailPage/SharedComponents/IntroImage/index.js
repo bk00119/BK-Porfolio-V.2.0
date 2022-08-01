@@ -12,12 +12,12 @@ export default function IntroImage(props){
                     <Box sx={styles.projectIntroImageBox} className="projectIntroImageBox" >
                         <Box
                             component="img"
-                            // src="img/projects/WT_SHSI/laptop.png"
-                            src={props.img}
+                            src={require("../../"+props.img)} //DIR: "../../[Project Name]/img/[file]", require() can't get files from the parent directories when using variable, props.img
                             alt="Intro Image"
                             sx={styles.projectLaptopImage}
                             className="projectLaptopImage"
                         />
+                        {console.log(props.img=="../../WT_SHSI/img/laptop.png")}
                     </Box>
                 } 
             />
